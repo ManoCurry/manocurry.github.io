@@ -1,0 +1,320 @@
+<!DOCTYPE html><html><head><link rel="preload" href="/_next/20ac9bf2-79e4-493a-a891-753aad0e5242/page/devnotes/show/index.js" as="script"/><link rel="preload" href="/_next/20ac9bf2-79e4-493a-a891-753aad0e5242/page/_error/index.js" as="script"/><link rel="preload" href="/_next/e3bace7e8b6aad947c8a40c98b3a5d8f/app.js" as="script"/><meta charSet="utf-8" class="next-head"/><style id="__jsx-4107858914">.gnb__list.jsx-4107858914{position:absolute;left:40px;top:200px;list-style-type:none;height:calc(100vh - 200px);}
+.gnb__item.jsx-4107858914{width:100%;font-weight:700;}
+.gnb__item--last.jsx-4107858914{position:absolute;bottom:40px;}
+.navlink--big.jsx-4107858914{text-transform:uppercase;}
+.english.jsx-4107858914{font-size:24px;font-weight:700;}
+.korean.jsx-4107858914{padding:0 8px;font-size:20px;font-weight:700;line-height:24px;background-color:#1b2125;color:#ffffff;}
+.navlink.jsx-4107858914 span.jsx-4107858914{line-height:40px;}
+.inactive.jsx-4107858914 .english.jsx-4107858914{display:block;}
+.inactive.jsx-4107858914 .korean.jsx-4107858914{display:none;}
+.active.jsx-4107858914 .english.jsx-4107858914{display:none;}
+.active.jsx-4107858914 .korean.jsx-4107858914{display:block;}</style><style id="__jsx-1972967616">.header.jsx-1972967616{width:50%;max-width:300px;height:100vh;z-index:1000;background:#ffffff;}
+.mano.jsx-1972967616{position:absolute;top:40px;left:40px;width:40px;height:auto;}
+.mano.jsx-1972967616 a.jsx-1972967616{position:relative;width:50%;}</style><style id="__jsx-3573690635">.markdown{width:100%;max-width:590px;margin:0 auto;}
+.markdown ul,.markdown ol{padding-left:20px;margin-bottom:27px;}
+.markdown ul{list-style-type:disc;}
+.markdown ol{list-style-type:number;}
+.markdown h1{font-size:53px;line-height:1.2;margin-bottom:40px;}
+.markdown h2,.markdown h3,.markdown h4,.markdown h5{margin-top:81px;margin-bottom:27px;line-height:1;}
+.markdown h2{font-size:27px;}
+.markdown p{font-size:16px;line-height:1.6875;margin-bottom:27px;}
+.markdown blockquote{padding:10px 40px;}
+.markdown blockquote p{padding-left:20px;border-left:6px solid #e9ecef;font-size:14px;color:#495057;}
+.markdown pre{width:100%;margin-bottom:54px;}
+.markdown p+pre{margin-top:54px;white-space:pre-wrap;}
+.markdown pre code{display:inline-block;width:100%;font-family:'Menlo',monospace;font-size:13px;line-height:1.6;color:#868e96;}
+.markdown .highlight--container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;}
+.markdown .highlight--h1 span,.markdown .highlight--h2 span{position:relative;left:-16px;display:inline-block;padding:0 16px;margin-bottom:10px;line-height:1;}
+.markdown .highlight--h1 span{background-color:#ebeef0;}
+.markdown .highlight--h1 span:last-child{margin-bottom:0;}
+.markdown .highlight--container span{margin-bottom:13px;}
+.markdown .yellow span{background-color:#fef790 !important;}</style><style id="__jsx-1844938834">.section-container{position:relative;-webkit-flex-grow:1;-ms-flex-grow:1;flex-grow:1;height:100vh;padding-top:40px;padding-bottom:40px;overflow:hidden;}
+.section-layout{position:absolute;top:40px;bottom:40px;left:50%;overflow:auto;width:100%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);}
+.section-wrap{width:50%;max-width:700px;margin:0 auto;}
+.section-title{padding-top:32px;margin-bottom:64px;font-size:53px;line-height:1;-webkit-letter-spacing:-.03em;-moz-letter-spacing:-.03em;-ms-letter-spacing:-.03em;letter-spacing:-.03em;}
+.section-title span{font-size:24px;line-height:1;margin-left:16px;opacity:.5;-webkit-letter-spacing:-.025em;-moz-letter-spacing:-.025em;-ms-letter-spacing:-.025em;letter-spacing:-.025em;}</style><style id="__jsx-567900407">*:not(span){margin:0;box-sizing:border-box;font-family:'Helvetica Neue','Arial',sans-serif;color:#1b2125;}
+html{font-size:16px;line-height:1.6875;-webkit-letter-spacing:-.3px;-moz-letter-spacing:-.3px;-ms-letter-spacing:-.3px;letter-spacing:-.3px;}
+[lang='en']{font-family:'Helvetica Neue','Arial',sans-serif;font-weight:700;-webkit-letter-spacing:-.04em;-moz-letter-spacing:-.04em;-ms-letter-spacing:-.04em;letter-spacing:-.04em;}
+[lang='ko']{font-family:'Apple SD Gothic Neo','Spoqa Han Sans',sans-serif;font-weight:700;-webkit-letter-spacing:-.04em;-moz-letter-spacing:-.04em;-ms-letter-spacing:-.04em;letter-spacing:-.04em;}
+ul,li{padding:0;}
+a{text-decoration:none;color:inherit;pointer:cursor;}
+a:hover,a:focus{color:inherit;}
+.wrap{width:100%;height:100vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;overflow:hidden;}
+.sr-only{position:absolute;top:0;left:0;width:1px;height:1px;overflow:hidden;visibility:hidden;}</style><link href="/static/styles/xcode.css" rel="stylesheet"/></head><body class="custom_class"><div><div id="__next"><div data-reactroot=""><div class="jsx-567900407 wrap"><header class="jsx-1972967616 header"><h1 class="jsx-1972967616 mano"><a class="jsx-1972967616" href="/"><img src="/static/images/mano.svg" alt="마노커리" class="jsx-1972967616"/></a></h1><ul class="jsx-4107858914 gnb__list"><li class="jsx-4107858914 gnb__item"><a lang="en" class="jsx-4107858914 navlink navlink--big inactive" href="/devnotes/"><span lang="en" class="jsx-4107858914 english">Devnotes</span><span class="jsx-4107858914 korean">개발일기</span></a></li><li class="jsx-4107858914 gnb__item"><a lang="en" class="jsx-4107858914 navlink inactive" href="/bash_history/"><span lang="en" class="jsx-4107858914 english">.bash_history</span><span class="jsx-4107858914 korean">일상</span></a></li><li class="jsx-4107858914 gnb__item gnb__item--last"><a lang="en" class="jsx-4107858914 navlink inactive" href="/about/"><span lang="en" class="jsx-4107858914 english">$ whoami</span><span class="jsx-4107858914 korean">MANO</span></a></li></ul></header><section class="jsx-1844938834 section-container"><div class="jsx-1844938834 section-layout"><div class="jsx-1844938834 section-wrap"><article class="jsx-3573690635 markdown"><div class="jsx-3573690635"><h1>
+<span>Redux</span>
+<span>굴기</span>
+</h1>
+<p>Redux 사용에 있어서 아쉬웠던 점들과 그걸 고쳐나간 경험을 써보려 한다.
+(솔직히, Redux는 MobX에 비해 부족한 점이 많다.)</p>
+<p>리덕스는 다음과 같은 문제가 있다.</p>
+<ol>
+<li>Memoization이 안된다.</li>
+<li>비효율적인 리듀싱</li>
+</ol>
+<ul>
+<li>액션마다 렌더를 다시 시킨다.(Batched actions 처리에 불리)</li>
+<li>모든 리듀서에 액션을 넘겨준다.(combineReducers)</li>
+</ul>
+<ol start="3">
+<li>깊은 구조를 다루기 힘들다.</li>
+</ol>
+<p>하나씩 까엎어보자.</p>
+<h2>Memoization</h2>
+<p>Redux는 스테이트에 변경이 일어나면 모든 연결된(<code>connect</code>) 컴포넌트들에게 새로운 스테이트를
+전달해준다. 여기서, 스테이트의 일부에 이터레이션이나(배열이나 맵의 정렬, 필터) 계산이 있을 경우, 각각의
+컴포넌트들은 자신이 필요로 하는 부분은 변경이 없음에도 불구하고 다시 계산을 해야한다.</p>
+<p>여기서 Memoization은 이전에 받은 인수들과 리턴 값을 기억해두어, 새로 받은 인수가 이전과 동일 할 경우,
+기억해둔 리턴값을 그대로 돌려주게 만들어져있다.</p>
+<p>직접 만들기 어려운건 아니지만, <a href="https://github.com/reactjs/reselect">Reselect</a>를 사용하면 좀 더 강력하게 Memoization을 사용할 수 있다.</p>
+<p>Reselect는 2개의 단계로 Redux의 스테이트로부터 계산식에 필요한 인수를 구하는 함수들과,
+이 인수들로 결과값을 만드는 계산 함수로 되어있다.</p>
+<p>고로 값이 변경되어 State의 인스턴스가 새로 만들어져도, 인수로 필요로 하는 값이 아직 변경이 안됬으면
+이전 결과값을 바로 재활용 할 수 있다.</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> { createSelector } <span class="hljs-keyword">from</span> <span class="hljs-string">'reselect'</span>
+
+<span class="hljs-comment">// 스테이트에서 어떤 값을 인수로 쓸지 찾아주는 함수들이다.</span>
+<span class="hljs-keyword">const</span> getVisibilityFilter = <span class="hljs-function">(<span class="hljs-params">state</span>) =></span> state.visibilityFilter
+<span class="hljs-keyword">const</span> getTodos = <span class="hljs-function">(<span class="hljs-params">state</span>) =></span> state.todos
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> getVisibleTodos = createSelector(
+  [ getVisibilityFilter, getTodos ],
+  <span class="hljs-comment">// 찾아진 인수에 대해 계산을 행한다.</span>
+  (visibilityFilter, todos) => {
+    <span class="hljs-keyword">switch</span> (visibilityFilter) {
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'SHOW_ALL'</span>:
+        <span class="hljs-keyword">return</span> todos
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'SHOW_COMPLETED'</span>:
+        <span class="hljs-keyword">return</span> todos.filter(<span class="hljs-function"><span class="hljs-params">t</span> =></span> t.completed)
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'SHOW_ACTIVE'</span>:
+        <span class="hljs-keyword">return</span> todos.filter(<span class="hljs-function"><span class="hljs-params">t</span> =></span> !t.completed)
+    }
+  }
+)
+</code></pre>
+<h2>Batched Actions</h2>
+<p>연속적인 액션 디스패치시, 리덕스는 매 디스패치마다 연결된 컴포넌트에게 새 스테이트를 전달해준다.
+스테이트가 안바뀐다면, <code>mapStateToProps</code>를 두드리진 않겠지만, 매 디스패치마다 스테이트가 바뀌고 앞서
+설명한 Memoization이 제대로 안되어있으면 앱은 엄청나게 느려질 것이다.</p>
+<p>물론 대책은 <code>디스패치를 자주 안하면 된다.</code> 라는 방법이 있다. 이는 작은 액션을 여러개 디스패치하는걸
+삼가고, 아주 강력한 하나의 액션을 소수 만들면 된다. 문제는 여기서 시작된다. 이렇게 만든 액션이 관리하기
+쉬운 코드일까? 함수를 만들 때도 작은 일을 확실하게 하는 녀석들을 많이 만들어야 테스트도 쉽고, 재사용성도
+높아지고 이해하기도 쉬워진다. 고로, 개발 경험을 높이기 위해서는 작고 하나의 일을 확실히 해내는 액션을
+많이 가지는게 이롭다.</p>
+<p>고로, 우리는 일련의 액션에 대해 리듀싱을 모두 다 끝내주고 컴포넌트들에게 넘겨 줄 필요가 있다.</p>
+<p>이를 해결하기 위해 몇가지의 작은 기존 라이브러리가 있는데, 사용성이 별로 마음에 안들고, Redux Saga에
+제대로 대응하지도 않는게 대부분이었다.</p>
+<p>그래서, 새롭게 <a href="https://github.com/Revisolution/typed-redux-kit/blob/master/packages/batch-enhancer/readme.md">Batch Enhancer</a>를 만들었다.</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">const</span> sagaMiddleware = createSagaMiddleware()
+<span class="hljs-keyword">const</span> middlewareEnhancer = applyMiddleware(sampleMiddleware)
+<span class="hljs-keyword">const</span> enhancer = compose&#x3C;Redux.StoreEnhancerStoreCreator&#x3C;State>>(
+  middlewareEnhancer,
+  batchEnhancer(sagaMiddleware),
+  <span class="hljs-comment">// Saga를 쓰지 않는다면, 미들웨어를 넘겨주지 않아도 된다.</span>
+  <span class="hljs-comment">// batchEnhancer(),</span>
+)
+<span class="hljs-comment">// 적용은 가볍게 인핸서만 넣어주면 된다.</span>
+<span class="hljs-keyword">const</span> store = createStore(reducer, enhancer)
+
+<span class="hljs-comment">// 이제 배열로 디스패치가 가능하다.</span>
+store.dispatch([
+  {
+    <span class="hljs-keyword">type</span>: <span class="hljs-string">'SayHello'</span>,
+  },
+  {
+    <span class="hljs-keyword">type</span>: <span class="hljs-string">'SayHello'</span>,
+  },
+  {
+    <span class="hljs-keyword">type</span>: <span class="hljs-string">'SayHello'</span>,
+  },
+])
+
+<span class="hljs-comment">// `put` 이펙트에서도 똑같이 쓸 수 있다.</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> * <span class="hljs-title">saga</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) {
+    <span class="hljs-keyword">yield</span> take(<span class="hljs-string">'SayHello'</span>)
+    <span class="hljs-keyword">yield</span> put([
+      {
+        <span class="hljs-keyword">type</span>: <span class="hljs-string">'SayBye'</span>,
+      },
+      {
+        <span class="hljs-keyword">type</span>: <span class="hljs-string">'SayBye'</span>,
+      },
+      {
+        <span class="hljs-keyword">type</span>: <span class="hljs-string">'SayBye'</span>,
+      },
+    ])
+  }
+}
+</code></pre>
+<p>이제, 배열에 담긴 액션들을 다 리듀스하고나서 컴포넌트들에겐 최종적인 결과물만 알려주게 된다.</p>
+<h2>Efficient reducing with Map</h2>
+<p>또 다른 문제로, <code>combineReducers</code>과 <code>switch</code> 구문이 별로 마음에 안들었다. 처음 쓰기엔 쉽지만,
+앱이 커질수록 매 액션들을 모든 스위치 구문으로 통과시키는건 너무 비효율 적인듯 해보였다.</p>
+<p>이에, <a href="https://github.com/Revisolution/typed-redux-kit/blob/master/packages/mapped-reducer/readme.md">Mapped Reducer</a>를 만들었는데, 액션 타입을 키로 그에 맞춰 스테이트를 변경하는 함수를 값으로
+가지는 맵을 만들었다. 이벤트 리스너랑 비슷해진 느낌인데, 기능상으론 combineReducers와 크게 다른건 없다.</p>
+<p>장점은 액션에 대해 특정 리듀서만 작동 시킬 수 있다는 점이고, Map을 활용했기에 액션 수가 많아질 수록
+Switch보다 인덱싱에서 유리한 고지를 점할 수 있다.(Map은 키를 해시값으로 다룬다.)</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">import</span> { createStore } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux'</span>
+<span class="hljs-keyword">import</span> { MappedPipeReducer } <span class="hljs-keyword">from</span> <span class="hljs-string">'typed-redux-kit.mapped-reducer'</span>
+<span class="hljs-keyword">import</span> {
+  PureAction,
+  PayloadAction,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'typed-redux-kit.base'</span>
+
+<span class="hljs-keyword">enum</span> ActionTypes {
+  Plus = <span class="hljs-string">'test_Plus'</span>,
+  Set = <span class="hljs-string">'test_Set'</span>,
+}
+
+<span class="hljs-keyword">namespace</span> Actions {
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> Plus <span class="hljs-keyword">extends</span> PureAction&#x3C;ActionTypes.Plus> {}
+
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> Set <span class="hljs-keyword">extends</span> PayloadAction&#x3C;ActionTypes.Set, {
+    count: <span class="hljs-built_in">number</span>
+  }> {}
+}
+
+<span class="hljs-keyword">interface</span> State {
+  count: <span class="hljs-built_in">number</span>
+}
+
+<span class="hljs-keyword">const</span> plusReducer = <span class="hljs-function">(<span class="hljs-params">state: State, action: Actions.PlusAction</span>) =></span> ({
+  ...state,
+  count: state.count + <span class="hljs-number">1</span>,
+})
+
+<span class="hljs-keyword">const</span> setReducer = <span class="hljs-function">(<span class="hljs-params">state: State, action: Actions.SetAction</span>) =></span> ({
+  ...state,
+  ...action.payload,
+})
+
+<span class="hljs-comment">// 초기 스테이트는 스토어에 넣어줘도 된다.</span>
+<span class="hljs-keyword">const</span> reducer = <span class="hljs-keyword">new</span> MappedPipeReducer&#x3C;State>({
+  initialState: {
+    count: <span class="hljs-number">0</span>,
+  },
+})
+
+reducer
+  .set(ActionTypes.Plus, plusReducer)
+  .set(ActionTypes.Set, setReducer)
+  <span class="hljs-comment">// 복수의 액션타입에 대해서도 간단히 배열로 넣어줄 수 있다.</span>
+  .set([
+    ActionTypes.Plus,
+    ActionTypes.Set,
+  ], anotherReducer)
+  <span class="hljs-comment">// String enum도 따로 변환없이 바로 넣어줄 수 있다.</span>
+  .set(ActionTypes, yetAnotherReducer)
+
+<span class="hljs-keyword">const</span> store = createStore(reducer.reduce)
+store.dispatch({
+  <span class="hljs-keyword">type</span>: ActionTypes.Plus,
+} <span class="hljs-keyword">as</span> Actions.Plus)
+</code></pre>
+<h2>Deep state</h2>
+<p>Redux에선 깊은 데이터 구조를 다루기 매우 귀찮다. 이는 변경 사항을 항상 Immutable한 상태로 유지해야하기 떄문인데, 그냥 오브젝트로 깊은 곳에 있는 값을 수정하려 할경우 다음과 같이 된다:</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">const</span> myReducer = <span class="hljs-function">(<span class="hljs-params">state, action</span>) =></span> ({
+  ...state,
+  depth1: {
+    ...state.depth1,
+    depth2: {
+      ...state.depth1.depth2,
+      depth3: {
+        ...state.depth1.depth2.depth3,
+        depth4: action.payload
+      },
+    },
+  },
+})
+</code></pre>
+<p>콜백헬 처럼 피라미드가 되어가...</p>
+<p>이에 페이스북이 만든 Immutable.js는 더 나은 API로 이를 쉽게 다루게 해준다.</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">const</span> myReducer = <span class="hljs-function">(<span class="hljs-params">state, action</span>) =></span> (
+  state.setIn([<span class="hljs-string">'depth1'</span>, <span class="hljs-string">'depth2'</span>, <span class="hljs-string">'depth3'</span>, <span class="hljs-string">'depth4'</span>], action.payload)
+)
+</code></pre>
+<p>근데, 문제점은... <code>getIn</code>, <code>setIn</code>, <code>...In</code>과 같은 메소드는 문자열의 배열로 키들을 가져와서 값을
+찾아 내도록 만들어져 있으므로, 타입 추론이 불가능하다는 것이므로, 키값을 잘못넣으면 런타임까지 가야 에러를
+찾을 수 있기 때문에, 항상 테스트를 할 필요가 있다.</p>
+<p>이를 타입스크립트로 틀어막기위해선 <code>...In</code>을 쓰면 안되는데, 그러면...:</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">const</span> myReducer = <span class="hljs-function">(<span class="hljs-params">state, action</span>) =></span> (
+  state
+    .update(<span class="hljs-string">'depth1'</span>, <span class="hljs-function"><span class="hljs-params">depth1</span> =></span> depth1
+      .update(<span class="hljs-string">'depth2'</span>, <span class="hljs-function"><span class="hljs-params">depth2</span> =></span> depth2
+        .update(<span class="hljs-string">'depth3'</span>, <span class="hljs-function"><span class="hljs-params">depth3</span> =></span> depth3
+          .update(<span class="hljs-string">'depth4'</span>, <span class="hljs-function"><span class="hljs-params">depth4</span> =></span> action.payload)
+        )
+      )
+    )
+)
+</code></pre>
+<p>또 다른 피라미드가 생긴다.</p>
+<p>이에 해결책을 고민하다 MobX의 Observable Object를 보고 영감을 받아 <a href="https://github.com/Revisolution/typed-redux-kit/blob/master/packages/trackable/readme.md">Trackable</a>을 만들었다.</p>
+<p>Trackable은 말그대로 추적을 해주는 데이터 구조체로 값이 변경되면 흔적을 남겨두고 마지막으로 리듀서에서
+나갈 때 변경된 부분만 새로운 인스턴스로 만들어주면 준다.</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> Redux <span class="hljs-keyword">from</span> <span class="hljs-string">'redux'</span>
+<span class="hljs-keyword">import</span> {
+  trackEnhancer,
+  TrackableRecord,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'../lib'</span>
+
+<span class="hljs-keyword">const</span> CountRecord = TrackableRecord({
+  count: <span class="hljs-number">0</span>,
+})
+<span class="hljs-keyword">type</span> CountRecord = TrackableRecord&#x3C;{
+  count: <span class="hljs-built_in">number</span>
+}>
+<span class="hljs-keyword">type</span> State = TrackableMap&#x3C;<span class="hljs-built_in">string</span>, CountRecord>
+<span class="hljs-keyword">const</span> defaultChildState = CountRecord({
+  count: <span class="hljs-number">0</span>,
+})
+<span class="hljs-keyword">const</span> defaultState: State = <span class="hljs-keyword">new</span> TrackableMap({
+  a: defaultChildState,
+})
+
+<span class="hljs-keyword">const</span> myReducer = <span class="hljs-function">(<span class="hljs-params">state: State = defaultState, action: Redux.Action</span>) =></span> {
+  <span class="hljs-keyword">if</span> (action.type === <span class="hljs-string">'add'</span>) {
+    <span class="hljs-comment">// 이제 불변성 신경안쓰고 신나게 바꿔도 된다!</span>
+    state.get(<span class="hljs-string">'a'</span>).count++
+  }
+  <span class="hljs-keyword">return</span> state
+}
+<span class="hljs-comment">// 왜냐하면 `trackEnhancer`가 변경을 추적해서 더러워진(변경된) 부분을 깔끔하게 해주기 때문에!</span>
+<span class="hljs-keyword">const</span> store = Redux.createStore(myReducer, trackEnhancer)
+
+store.dispatch({
+  <span class="hljs-keyword">type</span>: <span class="hljs-string">'add'</span>,
+})
+
+<span class="hljs-keyword">const</span> reducedState = store.getState()
+expect(reducedState.get(<span class="hljs-string">'a'</span>).count).toBe(<span class="hljs-number">1</span>)
+<span class="hljs-comment">// 고로 변경은 뮤터블하게 했지만 결과의 인스턴스는 바뀌어있다.</span>
+expect(reducedState).not.toBe(defaultState)
+</code></pre>
+<p>주의할 점은 Object나 Map, Array를 모두 Trackable로 관리해야한다. (예제엔 없지만 배열을 위해
+<code>TrackableArray</code> 역시 준비되어 있다.)</p>
+<p>그리고 Immutable.js보다 조금 성능상 모자란 부분이 있는데, Immutable.js는 HAMT를 사용하여
+새 인스턴스를 더욱 효율적으로 만들 수 있다. 하지만 Trackable은 아직 단순히 1차원적으로 키와 값의
+이터레이션으로 새 인스턴스를 만들고 있으므로, 혹시 수평적으로 엄청 거대한 맵을 만들려고 할 때에는 보틀넥이
+될것이다. 아마 이번달 중으로 작업할 것이므로 조금만 더 기다려줬으면 한다. (혹은 수직적으로 더 깊은 구조를
+만들어 카테고리화 시키는 것도 한가지 방법이다.)</p>
+<p>앞으로 할 건 HAMT와 Set 구조를 더 추가할 계획이다.</p>
+<h2>마무리</h2>
+<p>리덕스에서 느껴지는 여러가지 문제점들을 하나씩 태클해 보았다. 덕분에 타입스크립트를 좀 더 잘 다룰 수 있게
+되는 등 배운게 많은 거 같다.</p>
+<p>단, 아직까지 리덕스에서 아쉽다고 느껴지는 점은 언제나 코드가 너무 장황해진다는 것이다.</p>
+<p>어쩌면 CLI같은걸 만들어서 해결할 수 있지 않을까 라는 상상도 하는데 일단은 좀 더 유즈케이스를 늘려서
+힌트를 찾으러 다녀야겠다.</p></div></article></div></div></section></div></div></div><div id="__next-error"></div></div><div><script>
+          __NEXT_DATA__ = {"props":{"content":"---\nauthor: 준영\ntitle: Redux 굴기(崛起)\ndate: 2017-09-10 12:00:00 +0900\ntags: [redux, typescript]\n---\n\n\u003ch1\u003e\n\u003cspan\u003eRedux\u003c/span\u003e\n\u003cspan\u003e굴기\u003c/span\u003e\n\u003c/h1\u003e\n\nRedux 사용에 있어서 아쉬웠던 점들과 그걸 고쳐나간 경험을 써보려 한다.\n(솔직히, Redux는 MobX에 비해 부족한 점이 많다.)\n\n리덕스는 다음과 같은 문제가 있다.\n\n1. Memoization이 안된다.\n2. 비효율적인 리듀싱\n  - 액션마다 렌더를 다시 시킨다.(Batched actions 처리에 불리)\n  - 모든 리듀서에 액션을 넘겨준다.(combineReducers)\n3. 깊은 구조를 다루기 힘들다.\n\n하나씩 까엎어보자.\n\n## Memoization\n\nRedux는 스테이트에 변경이 일어나면 모든 연결된(`connect`) 컴포넌트들에게 새로운 스테이트를\n전달해준다. 여기서, 스테이트의 일부에 이터레이션이나(배열이나 맵의 정렬, 필터) 계산이 있을 경우, 각각의\n컴포넌트들은 자신이 필요로 하는 부분은 변경이 없음에도 불구하고 다시 계산을 해야한다.\n\n여기서 Memoization은 이전에 받은 인수들과 리턴 값을 기억해두어, 새로 받은 인수가 이전과 동일 할 경우,\n기억해둔 리턴값을 그대로 돌려주게 만들어져있다.\n\n직접 만들기 어려운건 아니지만, [Reselect]를 사용하면 좀 더 강력하게 Memoization을 사용할 수 있다.\n\nReselect는 2개의 단계로 Redux의 스테이트로부터 계산식에 필요한 인수를 구하는 함수들과,\n이 인수들로 결과값을 만드는 계산 함수로 되어있다.\n\n고로 값이 변경되어 State의 인스턴스가 새로 만들어져도, 인수로 필요로 하는 값이 아직 변경이 안됬으면\n이전 결과값을 바로 재활용 할 수 있다.\n\n```js\nimport { createSelector } from 'reselect'\n\n// 스테이트에서 어떤 값을 인수로 쓸지 찾아주는 함수들이다.\nconst getVisibilityFilter = (state) =\u003e state.visibilityFilter\nconst getTodos = (state) =\u003e state.todos\n\nexport const getVisibleTodos = createSelector(\n  [ getVisibilityFilter, getTodos ],\n  // 찾아진 인수에 대해 계산을 행한다.\n  (visibilityFilter, todos) =\u003e {\n    switch (visibilityFilter) {\n      case 'SHOW_ALL':\n        return todos\n      case 'SHOW_COMPLETED':\n        return todos.filter(t =\u003e t.completed)\n      case 'SHOW_ACTIVE':\n        return todos.filter(t =\u003e !t.completed)\n    }\n  }\n)\n```\n\n## Batched Actions\n\n연속적인 액션 디스패치시, 리덕스는 매 디스패치마다 연결된 컴포넌트에게 새 스테이트를 전달해준다.\n스테이트가 안바뀐다면, `mapStateToProps`를 두드리진 않겠지만, 매 디스패치마다 스테이트가 바뀌고 앞서\n설명한 Memoization이 제대로 안되어있으면 앱은 엄청나게 느려질 것이다.\n\n물론 대책은 `디스패치를 자주 안하면 된다.` 라는 방법이 있다. 이는 작은 액션을 여러개 디스패치하는걸\n삼가고, 아주 강력한 하나의 액션을 소수 만들면 된다. 문제는 여기서 시작된다. 이렇게 만든 액션이 관리하기\n쉬운 코드일까? 함수를 만들 때도 작은 일을 확실하게 하는 녀석들을 많이 만들어야 테스트도 쉽고, 재사용성도\n높아지고 이해하기도 쉬워진다. 고로, 개발 경험을 높이기 위해서는 작고 하나의 일을 확실히 해내는 액션을\n많이 가지는게 이롭다.\n\n고로, 우리는 일련의 액션에 대해 리듀싱을 모두 다 끝내주고 컴포넌트들에게 넘겨 줄 필요가 있다.\n\n이를 해결하기 위해 몇가지의 작은 기존 라이브러리가 있는데, 사용성이 별로 마음에 안들고, Redux Saga에\n제대로 대응하지도 않는게 대부분이었다.\n\n그래서, 새롭게 [Batch Enhancer]를 만들었다.\n\n```ts\nconst sagaMiddleware = createSagaMiddleware()\nconst middlewareEnhancer = applyMiddleware(sampleMiddleware)\nconst enhancer = compose\u003cRedux.StoreEnhancerStoreCreator\u003cState\u003e\u003e(\n  middlewareEnhancer,\n  batchEnhancer(sagaMiddleware),\n  // Saga를 쓰지 않는다면, 미들웨어를 넘겨주지 않아도 된다.\n  // batchEnhancer(),\n)\n// 적용은 가볍게 인핸서만 넣어주면 된다.\nconst store = createStore(reducer, enhancer)\n\n// 이제 배열로 디스패치가 가능하다.\nstore.dispatch([\n  {\n    type: 'SayHello',\n  },\n  {\n    type: 'SayHello',\n  },\n  {\n    type: 'SayHello',\n  },\n])\n\n// `put` 이펙트에서도 똑같이 쓸 수 있다.\nfunction * saga () {\n  while (true) {\n    yield take('SayHello')\n    yield put([\n      {\n        type: 'SayBye',\n      },\n      {\n        type: 'SayBye',\n      },\n      {\n        type: 'SayBye',\n      },\n    ])\n  }\n}\n```\n\n이제, 배열에 담긴 액션들을 다 리듀스하고나서 컴포넌트들에겐 최종적인 결과물만 알려주게 된다.\n\n## Efficient reducing with Map\n\n또 다른 문제로, `combineReducers`과 `switch` 구문이 별로 마음에 안들었다. 처음 쓰기엔 쉽지만,\n앱이 커질수록 매 액션들을 모든 스위치 구문으로 통과시키는건 너무 비효율 적인듯 해보였다.\n\n이에, [Mapped Reducer]를 만들었는데, 액션 타입을 키로 그에 맞춰 스테이트를 변경하는 함수를 값으로\n가지는 맵을 만들었다. 이벤트 리스너랑 비슷해진 느낌인데, 기능상으론 combineReducers와 크게 다른건 없다.\n\n장점은 액션에 대해 특정 리듀서만 작동 시킬 수 있다는 점이고, Map을 활용했기에 액션 수가 많아질 수록\nSwitch보다 인덱싱에서 유리한 고지를 점할 수 있다.(Map은 키를 해시값으로 다룬다.)\n\n```ts\nimport { createStore } from 'redux'\nimport { MappedPipeReducer } from 'typed-redux-kit.mapped-reducer'\nimport {\n  PureAction,\n  PayloadAction,\n} from 'typed-redux-kit.base'\n\nenum ActionTypes {\n  Plus = 'test_Plus',\n  Set = 'test_Set',\n}\n\nnamespace Actions {\n  export interface Plus extends PureAction\u003cActionTypes.Plus\u003e {}\n\n  export interface Set extends PayloadAction\u003cActionTypes.Set, {\n    count: number\n  }\u003e {}\n}\n\ninterface State {\n  count: number\n}\n\nconst plusReducer = (state: State, action: Actions.PlusAction) =\u003e ({\n  ...state,\n  count: state.count + 1,\n})\n\nconst setReducer = (state: State, action: Actions.SetAction) =\u003e ({\n  ...state,\n  ...action.payload,\n})\n\n// 초기 스테이트는 스토어에 넣어줘도 된다.\nconst reducer = new MappedPipeReducer\u003cState\u003e({\n  initialState: {\n    count: 0,\n  },\n})\n\nreducer\n  .set(ActionTypes.Plus, plusReducer)\n  .set(ActionTypes.Set, setReducer)\n  // 복수의 액션타입에 대해서도 간단히 배열로 넣어줄 수 있다.\n  .set([\n    ActionTypes.Plus,\n    ActionTypes.Set,\n  ], anotherReducer)\n  // String enum도 따로 변환없이 바로 넣어줄 수 있다.\n  .set(ActionTypes, yetAnotherReducer)\n\nconst store = createStore(reducer.reduce)\nstore.dispatch({\n  type: ActionTypes.Plus,\n} as Actions.Plus)\n```\n\n## Deep state\n\nRedux에선 깊은 데이터 구조를 다루기 매우 귀찮다. 이는 변경 사항을 항상 Immutable한 상태로 유지해야하기 떄문인데, 그냥 오브젝트로 깊은 곳에 있는 값을 수정하려 할경우 다음과 같이 된다:\n\n```ts\nconst myReducer = (state, action) =\u003e ({\n  ...state,\n  depth1: {\n    ...state.depth1,\n    depth2: {\n      ...state.depth1.depth2,\n      depth3: {\n        ...state.depth1.depth2.depth3,\n        depth4: action.payload\n      },\n    },\n  },\n})\n```\n\n콜백헬 처럼 피라미드가 되어가...\n\n이에 페이스북이 만든 Immutable.js는 더 나은 API로 이를 쉽게 다루게 해준다.\n\n```ts\nconst myReducer = (state, action) =\u003e (\n  state.setIn(['depth1', 'depth2', 'depth3', 'depth4'], action.payload)\n)\n```\n\n근데, 문제점은... `getIn`, `setIn`, `...In`과 같은 메소드는 문자열의 배열로 키들을 가져와서 값을\n찾아 내도록 만들어져 있으므로, 타입 추론이 불가능하다는 것이므로, 키값을 잘못넣으면 런타임까지 가야 에러를\n찾을 수 있기 때문에, 항상 테스트를 할 필요가 있다.\n\n이를 타입스크립트로 틀어막기위해선 `...In`을 쓰면 안되는데, 그러면...:\n\n```ts\nconst myReducer = (state, action) =\u003e (\n  state\n    .update('depth1', depth1 =\u003e depth1\n      .update('depth2', depth2 =\u003e depth2\n        .update('depth3', depth3 =\u003e depth3\n          .update('depth4', depth4 =\u003e action.payload)\n        )\n      )\n    )\n)\n```\n\n또 다른 피라미드가 생긴다.\n\n이에 해결책을 고민하다 MobX의 Observable Object를 보고 영감을 받아 [Trackable]을 만들었다.\n\nTrackable은 말그대로 추적을 해주는 데이터 구조체로 값이 변경되면 흔적을 남겨두고 마지막으로 리듀서에서\n나갈 때 변경된 부분만 새로운 인스턴스로 만들어주면 준다.\n\n```ts\nimport * as Redux from 'redux'\nimport {\n  trackEnhancer,\n  TrackableRecord,\n} from '../lib'\n\nconst CountRecord = TrackableRecord({\n  count: 0,\n})\ntype CountRecord = TrackableRecord\u003c{\n  count: number\n}\u003e\ntype State = TrackableMap\u003cstring, CountRecord\u003e\nconst defaultChildState = CountRecord({\n  count: 0,\n})\nconst defaultState: State = new TrackableMap({\n  a: defaultChildState,\n})\n\nconst myReducer = (state: State = defaultState, action: Redux.Action) =\u003e {\n  if (action.type === 'add') {\n    // 이제 불변성 신경안쓰고 신나게 바꿔도 된다!\n    state.get('a').count++\n  }\n  return state\n}\n// 왜냐하면 `trackEnhancer`가 변경을 추적해서 더러워진(변경된) 부분을 깔끔하게 해주기 때문에!\nconst store = Redux.createStore(myReducer, trackEnhancer)\n\nstore.dispatch({\n  type: 'add',\n})\n\nconst reducedState = store.getState()\nexpect(reducedState.get('a').count).toBe(1)\n// 고로 변경은 뮤터블하게 했지만 결과의 인스턴스는 바뀌어있다.\nexpect(reducedState).not.toBe(defaultState)\n```\n\n주의할 점은 Object나 Map, Array를 모두 Trackable로 관리해야한다. (예제엔 없지만 배열을 위해\n`TrackableArray` 역시 준비되어 있다.)\n\n그리고 Immutable.js보다 조금 성능상 모자란 부분이 있는데, Immutable.js는 HAMT를 사용하여\n새 인스턴스를 더욱 효율적으로 만들 수 있다. 하지만 Trackable은 아직 단순히 1차원적으로 키와 값의\n이터레이션으로 새 인스턴스를 만들고 있으므로, 혹시 수평적으로 엄청 거대한 맵을 만들려고 할 때에는 보틀넥이\n될것이다. 아마 이번달 중으로 작업할 것이므로 조금만 더 기다려줬으면 한다. (혹은 수직적으로 더 깊은 구조를\n만들어 카테고리화 시키는 것도 한가지 방법이다.)\n\n앞으로 할 건 HAMT와 Set 구조를 더 추가할 계획이다.\n\n## 마무리\n\n리덕스에서 느껴지는 여러가지 문제점들을 하나씩 태클해 보았다. 덕분에 타입스크립트를 좀 더 잘 다룰 수 있게\n되는 등 배운게 많은 거 같다.\n\n단, 아직까지 리덕스에서 아쉽다고 느껴지는 점은 언제나 코드가 너무 장황해진다는 것이다.\n\n어쩌면 CLI같은걸 만들어서 해결할 수 있지 않을까 라는 상상도 하는데 일단은 좀 더 유즈케이스를 늘려서\n힌트를 찾으러 다녀야겠다.\n\n[reselect]:https://github.com/reactjs/reselect\n[batch enhancer]:https://github.com/Revisolution/typed-redux-kit/blob/master/packages/batch-enhancer/readme.md\n[mapped reducer]:https://github.com/Revisolution/typed-redux-kit/blob/master/packages/mapped-reducer/readme.md\n[trackable]:https://github.com/Revisolution/typed-redux-kit/blob/master/packages/trackable/readme.md"},"pathname":"/devnotes/show","query":{"id":"redux-rises"},"buildId":"20ac9bf2-79e4-493a-a891-753aad0e5242","buildStats":{"app.js":{"hash":"e3bace7e8b6aad947c8a40c98b3a5d8f"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
+          module={}
+          __NEXT_LOADED_PAGES__ = []
+          __NEXT_LOADED_CHUNKS__ = []
+
+          __NEXT_REGISTER_PAGE = function (route, fn) {
+            __NEXT_LOADED_PAGES__.push({ route: route, fn: fn })
+          }
+
+          __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
+            __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
+          }
+        </script><script async="" id="__NEXT_PAGE__/devnotes/show" type="text/javascript" src="/_next/20ac9bf2-79e4-493a-a891-753aad0e5242/page/devnotes/show/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/20ac9bf2-79e4-493a-a891-753aad0e5242/page/_error/index.js"></script><div></div><script type="text/javascript" src="/_next/e3bace7e8b6aad947c8a40c98b3a5d8f/app.js" async=""></script></div></body></html>
